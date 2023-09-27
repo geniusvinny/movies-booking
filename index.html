@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<htm lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Movie Booking Platform</title>
+        <link rel="stylesheet" href="./styles/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+    </head>
+    <body onload="initialize()">
+        <header>
+            <div class="left-div">
+                <img src="https://i.pinimg.com/564x/92/a0/48/92a048c2b6f678de69406f896a09c484.jpg" alt="">
+            </div>
+            <div class="right-div">
+                <p>Movie Booking Platform</p>
+            </div>
+        </header>
+        <main>
+
+            <div class="main-body">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://m.economictimes.com/thumb/msid-99590943,width-1200,height-900,resizemode-4,imgsize-44826/most-awaited-movies-of-2023-check-full-list.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/564x/ca/6a/15/ca6a153ec3ed6adba3c3bb18451860e3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/5d/5c/8f/5d5c8ff49fd8ecd827e852f7eaf8456f.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                
+                <form id="bookingForm">
+                    <h2>Book a movie today</h2>
+                    <div class="overall-div">
+                         <div class="right-div">
+
+                <div class="y-margin">
+                    <input type="text" id="firstName" name="firstName" required placeholder="Enter your First Name">
+                </div>
+    
+                <div class="y-margin">
+                    <input type="text" id="lastName" name="lastName" required placeholder="Enter your last Name">
+                </div>
+    
+                <div class="y-margin">
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                 <div class="y-margin">
+                    <input type="number" id="age" name="age" required placeholder="Enter your age">
+                </div>
+                
+                <label>Gender:</label>
+                <div class="radio-class">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+               
+               </div>  
+
+
+                    <div class="left-div">
+
+                            <div class="y-margin">
+                                <input type="date" id="bookingDate" name="bookingDate" placeholder="Enter the date you want to book">
+                            </div>
+            
+                            <div class="y-margin">
+                                <input type="number" id="numTickets" name="numTickets" value="" id="tickets" placeholder="Enter the number of tickets">
+                            </div>
+                            <div class="y-margin">
+                                <select id="city" name="city">
+                                    <option value="#">Select a city</option>
+                                    <option value="new_york">Alberta</option>
+                                    <option value="los_angeles">British Columbia</option>
+                                    <option value="Colomnia">Colombia</option>
+                                    <!-- Add more city options as needed -->
+                                </select>
+                            </div>
+                
+                            <div class="radio-class y-margin">
+                                <div>
+                                    <input type="radio" id="theatre_location2" name="theatre_location" value="location2">
+                                    <label for="theatre_location2">Location1</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="theatre_location2" name="theatre_location" value="location2">
+                                    <label for="theatre_location2">Location2</label>
+                                </div>
+                           </div>
+                            <!-- Add more location options as needed -->
+                        <div class="y-margin">
+                            <select id="movies" name="movies">
+                                <option value="#">Select a movie to watch</option>
+                                <option value="movie2">The Shawshank Redemption</option>
+                                <option value="movie1">One Flew Over the Cuckoo's Nest</option>
+                                <option value="movie2">Money Heist</option>
+                                <option value="movie2">Forrest Gump</option>
+                                <option value="ASpaceOdyssey">A Space Odyssey</option>
+
+                            </select>
+                        </div>
+                    <label>Select show time:</label>
+                    <div class="y-margin radio-class showTimes" >
+                        <div>
+                            <input type="radio" id="Showtime1" name="Showtime1" value="05:30:hrs">
+                            <label for="Showtime1">05:30:hrs</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Showtime1" name="Showtime1" value="06:30:hrs">
+                            <label for="Showtime1">06:30:hrs</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Showtime1" name="Showtime1" value="09:30:hrs">
+                            <label for="Showtime1">09:30:hrs</label>
+                        </div>
+                    </div>
+        
+               </div>
+                    
+
+              
+                    </div>
+                  
+                    <div class="y-margin total">
+                        <label>Total Amount to be paid:</label> $<span id="totalAmount">0</span>.00
+                    </div>
+        
+                    <div class="y-margin">
+                        <button class="submit-btn" type="submit">Book now</button>
+                    </div>
+                </form>
+                <div class="top-movies row">
+                    <div class="movie-img col"> <img src="https://i.pinimg.com/564x/2e/20/f9/2e20f91176d3499593202a783c49cbac.jpg" alt=""></div>
+                    <div class="movie-img col"><img src="https://i.pinimg.com/564x/4f/57/64/4f5764d8527b2577d73eaa8f62aa9b33.jpg" alt=""></div>
+                    <div class="movie-img col"><img src="https://i.pinimg.com/564x/ca/6a/15/ca6a153ec3ed6adba3c3bb18451860e3.jpg" alt=""></div>
+                    <div class="movie-img col"><img src="https://i.pinimg.com/736x/5d/5c/8f/5d5c8ff49fd8ecd827e852f7eaf8456f.jpg" alt=""></div>
+                    <div class="movie-img col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0XYIADGTtN5fr5eQV5kX5ZkBVwmOQr9rFvkqWTPFKoWVbOVj7jtLo0GOqtNeTmLE8Kw&usqp=CAU" alt=""></div>
+                </div>
+                <div class="top-movies row">
+                    <div class="movie-img col"> <img src="https://images.justwatch.com/backdrop/176215874/s640/one-flew-over-the-cuckoos-nest.%7Bformat%7D" alt=""></div>
+                    <div class="movie-img col"><img src="https://flxt.tmsimg.com/assets/p15829_v_v13_aa.jpg" alt=""></div>
+                    <div class="movie-img col"><img src="https://static.theprint.in/wp-content/uploads/2022/09/ANI-20220929154028.jpg" alt=""></div>
+                    <div class="movie-img col"><img src="https://images.theconversation.com/files/217967/original/file-20180507-46350-r40xkb.jpg?ixlib=rb-1.1.0&rect=0%2C14%2C1200%2C630&q=45&auto=format&w=926&fit=clip" alt=""></div>
+                    <div class="movie-img col"><img src="https://m.media-amazon.com/images/S/pv-target-images/f9b4142838a72a46b5203d94580b89e4440f97020c2ca8b00e0abed84184e43b.jpg" alt=""></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="left">
+                <p>Contact Us </p>
+                <p>Phone: +254 567 865</p>
+                <p>Email: generic@gmail.com</p>
+            </div>
+            <div class="left">
+                <p>Movie Booking Platform </p>
+                <p>You ask, we deliver</p>
+            </div>
+        </footer>
+        <script src="./javascript/myname.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</htm>
